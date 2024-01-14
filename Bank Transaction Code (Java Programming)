@@ -1,0 +1,76 @@
+//BANK TRANSACTION CODE
+
+package com.mycompany.mavenproject1;
+import java.util.Scanner;
+import java.util.Date;
+public class Mavenproject1 {
+    
+    public static void main(String[] args) {
+                 String Name = "Chrizhylle Fajardo";
+                 int balance = 5000, withdraw, deposit;
+        Scanner s = new Scanner(System.in);
+        while(true)
+        {
+            System.out.println("\nAutomated Teller Machine");
+            System.out.println("[1]Withdraw");
+            System.out.println("[2]Deposit");
+            System.out.println("[3]Check Balance");
+            System.out.println("[4]EXIT");
+            System.out.print("\nChoose the operation you want to perform: ");
+            int n = s.nextInt();
+            switch(n)
+            {
+             case 1:
+                System.out.print("\nEnter money to be withdrawn:");
+                withdraw = s.nextInt();
+                if(balance >= withdraw)
+                {
+                    System.out.println("       ---*Cash Withdrawal*---");
+                    Date now = new Date();
+                    System.out.println(now);
+                    System.out.println("           Name:"+Name);
+                    System.out.println("         Amount:"+ withdraw);
+                    System.out.println("Current Balance:"+ balance);
+                    balance = balance - withdraw;
+                    System.out.println("---------------------------");
+                    System.out.println("    New Balance:"+ balance);
+                    System.out.println("Successful Transaction! Please collect your money");
+                }
+                else
+                {
+                    System.out.println("Insufficient Balance");
+                }
+                System.out.println("");
+                break;
+                
+                case 2:
+                System.out.print("\nEnter money to be deposited:");
+                deposit = s.nextInt();
+                System.out.println("           ---*Cash Deposit*---");
+                Date now = new Date();
+                System.out.println(now);
+                    System.out.println("           Name:"+Name);
+                    System.out.println("         Amount:"+ deposit);
+                    System.out.println("Current Balance:"+ balance);
+                    balance = balance + deposit;
+                    System.out.println("---------------------------");
+                    System.out.println("    New Balance:"+ balance);
+                    System.out.println("     Successful Transaction!");
+                break;
+ 
+                case 3:
+                System.out.println("        ---*Balance Inquiry*---");
+                    System.out.println("           Name:"+Name);
+                    System.out.println("Current Balance:"+ balance);
+                break;
+          
+                case 4:
+                System.exit(0);
+            }
+        }
+    }
+}
+            
+        
+    
+
