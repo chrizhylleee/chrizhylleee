@@ -1,0 +1,42 @@
+//Denomination
+package com.mycompany.javaday1;
+
+import java.util.Scanner;
+
+public class Javaday1 {
+
+    public static void main(String[] args) {
+        int a,b,c,d,e,f,g,h,i;
+         
+      Scanner input = new Scanner (System.in);
+      System.out.println("Input Amount: ");
+      a = input.nextInt();
+      
+      if (a>=1000){
+         b = a/1000;
+         a = a -(b*1000);
+         c = a/500;
+         a = a - (c*500);
+         d = a/100;
+         a = a - (d*100);
+         e = a/50;
+         a = a - (e*50);
+         f = a/20;
+         a = a - (f*20);
+         g = a/10;
+         a = a - (g*10);
+         h = a/5;
+         a = a - (h*5);
+         i = a/1;
+         
+         
+         System.out.println("1000 notes: " +b+ "\n500 notes: " +c+ "\n100 notes: " +d+ "\n50 notes: " +e+ "\n20 coin: " +f+ "\n10 coin: " +g+ "\n5 coin: " +h+ "\n1 coin: " +i);
+         
+      }else{
+      System.out.println("Error Occured");
+      }
+      
+    
+      
+    }
+}
