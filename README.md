@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @chrizhylleee
 - 👀 I’m interested in a lot of things actually, that's why I'm having a hard time choosing where to start with hehe
-- 🌱 I’m currently learning programming haha I'm Com Eng student and I want to try a more of fields  
+- 🌱 I’m currently learning programming haha I'm Com Eng student and I want to try a more fields  
 - 💞️ I’m looking to collaborate on learning to code
 - 📫 How to reach me? my email fajardochrizhylle14@gmail.com
 - 😄 Pronouns: she/her
